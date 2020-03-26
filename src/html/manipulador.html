@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Manipulador de Texto e Imagem</title>
+        <script src="manipulador.js"></script>
+        <link rel="stylesheet" type="text/css" href='estilo.css'>
+        <meta charset="utf8">
+    </head>
+
+    <body>
+        <div id="header">
+        <h1>Manipulador de Texto e Imagem</h1>
+    <form>
+    <br>    
+    <p class="manipulador"> 
+    Nome: <input type="text" name="nome" id="nome"><br>
+    Sobrenome: <input type="text" name="snome" id="snome"><br></p>
+    </form>
+    <button onclick="NOMEAR()" class="button" type="submit" id="nomear">Nomear</button>
+    <button onclick="RENOMEAR()" class="button" type="submit" id="renomear">Renomear</button>
+    <br>
+        <h4 class="avatar">Avatar:</h4>
+        <img src="avatar.png" class="avatar" onmouseover="AUMENTAR()" onmouseout="DIMINUIR()" onclick="AVISO()" id="imagem">
+
+    <BR>
+    <p id="resultado" class="manipulador"  onmouseover="AZUL()"></p>
+
+<button onclick="trocar()" id="botao"class="button">Voltar à página inicial</button>
+</div>
+    </body>
+
+</html>
